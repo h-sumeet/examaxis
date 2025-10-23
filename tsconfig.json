@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    // Next.js specific
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -20,7 +21,29 @@
     ],
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+
+    // Stricter Type Checking (added from your config)
+    "alwaysStrict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "useUnknownInCatchVariables": true,
+
+    // Code Quality & Safety (added from your config)
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": true,
+
+    // Module Resolution (added from your config)
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+
+    // Build Performance (added from your config)
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
     "next-env.d.ts",
