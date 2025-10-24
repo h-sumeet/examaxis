@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionHeader from "@/components/custom/section-header";
+import SectionHeader from "@/components/lander/section-header";
 import type { LogoSectionProps } from "@/constants/logo";
 
 export function LogoLoop({
@@ -22,7 +22,7 @@ export function LogoLoop({
                 alt={logo.alt}
                 width={120}
                 height={40}
-                className="h-8 sm:h-10 w-auto flex-none grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 dark:invert dark:brightness-0"
+                className="h-8 sm:h-10 w-auto flex-none grayscale opacity-50 dark:invert dark:brightness-0"
               />
             ))}
           </div>

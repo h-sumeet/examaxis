@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import SectionHeader from "@/components/custom/section-header";
+import SectionHeader from "@/components/lander/section-header";
 import type { FeaturesSectionProps } from "@/constants/features";
 
 export function Features({

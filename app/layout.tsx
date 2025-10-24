@@ -1,24 +1,15 @@
-import type { Metadata } from "next";
+import type { ReactNode } from "react";
+import { metadata } from "@/utils/metadata";
 import "@/styles/globals.css";
 import { figtree, robotoMono } from "@/lib/font";
-import Providers from "@/components/providers/Providers";
+import Providers from "@/components/custom/Providers";
 
-export const metadata: Metadata = {
-  title: "Examaxis",
-  description: "This website provides all the information about IT exams and certifications.",
-  icons: {
-    icon: [{ url: "/logo.png", type: "image/png" }],
-    apple: [{ url: "/logo.png", type: "image/png" }],
-  },
-  verification: {
-    google: "DdZU7HlLUvJT-FHvgpixByHGZldt23FAeWksTrKTPkM",
-  },
-};
+export { metadata };
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en" className="overscroll-none">

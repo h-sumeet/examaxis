@@ -3,7 +3,7 @@ import azure from "@/public/logos/azure.png";
 import cisco from "@/public/logos/cisco.png";
 import googleCloud from "@/public/logos/google_cloud.png";
 import servicenow from "@/public/logos/servicenow.png";
-import type { StaticImageData } from "next/dist/shared/lib/image-external";
+import type { StaticImageData } from "next/image";
 
 export interface LogoProps {
   src: StaticImageData;

@@ -2,8 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import SectionHeader from "@/components/custom/section-header";
-import { useMediaQuery } from "@/hooks/use-media-query";
+import SectionHeader from "@/components/lander/section-header";
 import type { TestimonialsProps } from "@/constants/testimonial";
 
 export function Testimonials({
@@ -11,9 +10,6 @@ export function Testimonials({
   description,
   items,
 }: TestimonialsProps) {
-  const isMobile = useMediaQuery("(max-width: 768px)");
-  const displayItems = isMobile ? items.slice(0, 3) : items;
-
   return (
     <section className="py-10 lg:py-20 relative">
       <div className="container mx-auto px-4">
@@ -21,10 +17,13 @@ export function Testimonials({
 
         {/* Masonry Grid Layout */}
         <div className="columns-1 md:columns-2 lg:columns-3 gap-6 max-w-7xl mx-auto px-6 lg:px-8">
-          {displayItems.map((testimonial, index) => (
+          {items.map((testimonial, index) => (
             <Card
-              key={index}
-              className="hover:shadow-lg hover:border-orange-600 transition-all duration-300 mb-6 break-inside-avoid bg-transparent"
+              key={testimonial.id}
+              // hide items after the first 3 on small screens, show from md up
+              className={`${
+                index >= 3 ? "hidden md:block" : ""
+              } hover:shadow-lg hover:border-orange-600 transition-all duration-300 mb-6 break-inside-avoid bg-transparent`}
             >
               <CardContent className="pt-6">
                 <div className="flex items-start gap-3 mb-4">

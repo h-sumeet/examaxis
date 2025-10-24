@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import SectionHeader from "@/components/custom/section-header";
+import SectionHeader from "@/components/lander/section-header";
 import type { FAQSectionProps } from "@/constants/faq";
 
 export function FAQ({ heading, description, items }: FAQSectionProps) {

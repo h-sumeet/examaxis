@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GridPattern } from "@/components/ui/grid-pattern";
-import SectionHeader from "@/components/custom/section-header";
+import SectionHeader from "@/components/lander/section-header";
 import { cn } from "@/lib/utils";
 import type { StatsSectionProps } from "@/constants/stats";
 
@@ -17,8 +17,9 @@ export function CTA({ stats }: StatsSectionProps) {
         y={-1}
         strokeDasharray={"4 2"}
         className={cn(
-          "mask-[radial-gradient(600px_circle_at_center,white,transparent)]",
-          "stroke-orange-500/20"
+          "[-webkit-mask-image:radial-gradient(600px_at_center,white,transparent)]",
+          "mask-[radial-gradient(600px_at_center,white,transparent)]",
+          "stroke-orange-500/30"
         )}
       />
 

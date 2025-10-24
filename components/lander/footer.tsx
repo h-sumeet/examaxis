@@ -1,23 +1,6 @@
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
-
-const footerLinks = {
-  resources: [
-    { label: "Blog", href: "/blog" },
-    { label: "Releases", href: "/releases" },
-    { label: "Docs", href: "/docs" },
-  ],
-  community: [
-    { label: "GitHub", href: "https://github.com" },
-    { label: "Discord", href: "https://discord.com" },
-    { label: "X", href: "https://x.com" },
-  ],
-  company: [
-    { label: "About", href: "/about" },
-    { label: "Careers", href: "/careers" },
-    { label: "Contact", href: "/contact" },
-  ],
-};
+import { footerLinks } from "@/constants/common";
 
 export function Footer() {
   return (

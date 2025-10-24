@@ -1,9 +1,9 @@
-import React from "react";
+import type { ReactNode } from "react";
 
-export default function RootLayout({
+export default function HomeLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
-  return <main className="min-h-screen">{children}</main>;
+  return <div className="min-h-screen">{children}</div>;
 }

@@ -1,10 +1,9 @@
-import { BarChart3, BookOpen, Clock, FileCheck, Target, Trophy, type LucideProps } from "lucide-react";
-import type { ForwardRefExoticComponent, RefAttributes } from "react";
+import { BarChart3, BookOpen, Clock, FileCheck, Target, Trophy, type LucideIcon } from "lucide-react";
 
 export interface FeatureProps {
     title: string;
     description: string;
-    icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>;
+    icon: LucideIcon
 }
 
 export interface FeaturesSectionProps {

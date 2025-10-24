@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <main className="container mx-auto px-4 min-h-[calc(100vh-3rem)] flex items-center justify-center">
+    <main className="container mx-auto px-4 min-h-[calc(100vh-4rem)] flex items-center justify-center">
       <div className="relative w-full max-w-5xl text-center">
         <div className="inline-flex items-center gap-2 bg-orange-500/10 text-primary dark:text-orange-400 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-orange-500/20">
             <Sparkles className="w-4 h-4" />
