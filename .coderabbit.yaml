@@ -1,0 +1,11 @@
+reviews:
+  # Enable automated PR reviews
+  enabled: true
+
+  # Allow auto reviews on all base/target branches (not just main)
+  auto_review_branches: ["*"]
+
+  # Optional: customize review behavior
+  auto_approve: false
+  request_changes: true
+  comment_mode: summary
