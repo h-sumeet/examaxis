@@ -19,7 +19,7 @@ export default function SectionHeader({
         </h2>
       )}
       {description && (
-        <p className="mx-auto lg:px-30 text-muted-foreground text-base sm:text-lg lg:text-xl leading-relaxed">
+        <p className="mx-auto lg:px-32 text-muted-foreground text-base sm:text-lg lg:text-xl leading-relaxed">
           {description}
         </p>
       )}

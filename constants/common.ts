@@ -1,9 +1,9 @@
 export const navigationLinks = [
   { href: "/", label: "Home" },
-  { href: "/features", label: "Providers" },
-  { href: "/how-we-work", label: "Topics" },
-  { href: "/pricing", label: "Trending" },
-  { href: "/faqs", label: "Pricing" },
+  { href: "/providers", label: "Providers" },
+  { href: "/topics", label: "Topics" },
+  { href: "/trending", label: "Trending" },
+  { href: "/pricing", label: "Pricing" },
 ];
 
 export const footerLinks = {
